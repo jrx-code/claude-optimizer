@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "WebSearch",
+      "Bash(claude:*)",
+      "WebFetch(domain:openrouter.ai)",
+      "WebFetch(domain:www.crackedaiengineering.com)",
+      "WebFetch(domain:costgoat.com)",
+      "Bash(__NEW_LINE_e9384d85f1a861d6__ echo \"\")",
+      "Bash(__NEW_LINE_6d211aa91bd84291__ echo \"\")",
+      "Bash(__NEW_LINE_726401a32831096e__ echo \"\")",
+      "WebFetch(domain:openrouter.zendesk.com)",
+      "WebFetch(domain:www.oreateai.com)",
+      "Bash(ssh:*)",
+      "Bash(git -C /home/jiwanus/OneDrive/CodeHub/ai/claude-optimizer status)",
+      "Bash(git -C /home/jiwanus/OneDrive/CodeHub/ai/claude-optimizer init)",
+      "Bash(git -C /home/jiwanus/OneDrive/CodeHub/ai/claude-optimizer add .gitignore CLAUDE.md optimizer/ optimizer_config.json pytest.ini tests/ .claude/settings.local.json)",
+      "Bash(git -C:*)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "python3 -m optimizer.hook",
+        "timeout": 15000
+      }
+    ]
+  }
+}

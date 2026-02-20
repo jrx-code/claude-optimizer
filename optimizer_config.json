@@ -1,0 +1,10 @@
+{
+    "enabled": true,
+    "ollama_url": "http://ai.home.lan:11434",
+    "model": "gemma3:4b",
+    "timeout": 12,
+    "min_prompt_length": 10,
+    "openrouter_enabled": true,
+    "openrouter_model": "google/gemma-3-4b-it:free",
+    "openrouter_timeout": 15
+}
